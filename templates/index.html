@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--meta data-->
+    <title>Atelje Mlin Umetnin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ############favicon start############## -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/fav/favicon-16x16.png">
+    <link rel="manifest" href="/images/fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ############favicon end ############## -->
+
+  </head>
+  <body> 
+
+
+    <!-- header start -->
+    <div class="header">
+
+      <nav class="navigation">
+        <div class="nav-items">
+          <ul class="nav_opac">
+            <li><a href="#portfolio">galerija</a></li>
+            <li><a href="#about">o meni</a></li>
+            <li><a href="#contact">kontakt</a></li>
+          </ul>
+        </div>     
+      </nav> 
+
+      
+
+      <div class="header-text">
+        <h2 class="h2_head">Lončeni izdelki izpod rok tradicije</h2>
+        <p style="font-family: Mo_ExtraBold">________________________________</p>
+        
+
+      </div> 
+      
+    </div>
+
+
+    <div id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="title_gallery">
+          <!-- <h1 class="logo_mlin">MLIN</h1> -->
+          <h2 class="h2_heading">IZDELKI</h2>
+
+        </div>
+        <div class="portfolio_content">
+          <div class="item-cont">
+            <div class="portfolio-item">
+              <img src= "{{ url_for('static', filename= '/images/DSCN3208_k.jpg') }}" alt="profile image" class="gallery-image">
+
+            </div>
+          </div>
+          <div class="item-cont">
+            <div class="portfolio-item">
+              <img src= "{{ url_for('static', filename= '/images/DSCN3208_k.jpg') }}" alt="profile image" class="gallery-image">
+
+            </div>
+          </div>
+          <div class="item-cont">
+            <div class="portfolio-item">
+              <img src= "{{ url_for('static', filename= '/images/DSCN3208_k.jpg') }}" alt="profile image" class="gallery-image">
+
+            </div>
+          </div>
+          <div class="item-cont">
+            <div class="portfolio-item">
+                <img src= "{{ url_for('static', filename= '/images/DSCN3208_k.jpg') }}" alt="profile image" class="gallery-image">
+
+            </div>
+          </div>
+          <div class="item-cont">
+            <div class="portfolio-item">
+              <img src= "{{ url_for('static', filename= '/images/DSCN3208_k.jpg') }}" alt="profile image" class="gallery-image">
+
+            </div>
+          </div>
+          <div class="item-cont">
+            <div class="portfolio-item">
+                <img src= "{{ url_for('static', filename= '/images/DSCN3208_k.jpg') }}" alt="profile image" class="gallery-image">
+
+            </div>
+          </div>
+          <div class="go_to_izdelki">
+            <a class="a_arrow" href="#">
+
+              <p><i class="arrow"></i></p>
+              <p><i class="arrow"></i></p>
+              
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio end-->
+
+    <!--about start -->
+    <div id="about" class="about">
+      <div class="container">
+        
+        <div class="about_layout">
+
+          <div class="about_h">
+            <h2 class="h2_heading">MLIN UMETNIN</h2>
+
+          </div>
+
+
+          <div class="profile-image-cont">
+            <img src= "{{ url_for('static', filename= '/images/Atelje_Mlin_Umetnin_001a.JPG') }}" alt="profile image" class="profile-image">
+          </div>
+          
+          <div class="profile-text-cont">
+            <!-- <h2 class="h2_heading">O MENI</h2> -->
+            <!-- <p>Dobrodosli</p> -->
+            <p class="inspiration_p">Atelje Mlin umetnin, se nahaja le nekaj kilometrov iz sentjurja, na koncu doline v (vasi osredek). Vstran od mestnega vrveza, v prijetnem podezelskem okolju, ob zuborecem potoku,kjer v tisini se danes zivi duh nasih prednikov.
+             V objemu zelene pokrajine najdet mlin na vodni pogon. vodno kolo se  še vedno vrti in voda oe pokrajine, ki je bila izredno pomembna za prezivetje cloveka. Kjer si boste za trenutek dušo soočili tudi vi.
+            </p>
+          </div>
+
+          <div class="go_to_o_meni">
+            <a class="a_arrow" href="#">
+
+              <p><i class="arrow"></i></p>
+              <p><i class="arrow"></i></p>
+              
+            </a>
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+          
+      </div>
+    </div>
+    <!-- about end-->
+
+    <!--contact start -->
+    <div id="contact" class="contact">
+      <div class="container">
+        <div class="inspiration">
+          <p class="inspiration_p">V objemu zelene pokrajine nabjemu zelene pokrajine njdete naso malo posest, staro obnovljeno domacijo, nas dom</p>
+
+
+        </div>
+        <div class="contact-text-container">
+          <h2 class="h2_heading">KONTAKT</h2>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container_contact">
+      <div class="container">
+        <form action="action_page.php">
+
+          <!-- <label for="fname">First Name</label> -->
+          <input type="text" id="fname" name="firstname" placeholder="ime">
+
+          <!-- <label for="lname">Last Name</label> -->
+          <input type="text" id="lname" name="lastname" placeholder="email">
+
+          <!-- <label for="country">Country</label> -->
+          <!-- <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select> -->
+
+          <!-- <label for="subject">Subject</label> -->
+          <textarea id="subject" name="subject" placeholder="besedilo" style="height:200px"></textarea>
+          <div class="submit_cont">
+            
+            <input type="submit" value="pošlji" style= "font-family : Mo_Regular; letter-spacing : 1.5px">
+          </div>
+          
+
+        </form>
+      </div>
+    </div>
+
+
+    <!--footer start -->
+    <div class="container_footer">
+      <div class="container">
+        <div class="footer_content">
+          <div class="footer_info">
+            <h2 class="foot_name">MARIJA GRAČNAR</h2>
+            <div class="foot_line">
+              <p class="foot_initials">T</p>
+              <p class="foot_infos">+386 31 393 290</p>
+            </div>
+            <div class="foot_line">
+              <p class="foot_initials">E</p>
+              <p class="foot_infos">mlinumetnin@gmail.com</p>
+            </div>
+            <div class="foot_line_last">
+              <p class="foot_initials">N</p>
+              <p class="foot_infos">Osredek 18, 3230 ŠENTJUR</p>
+            </div>
+
+            <div>
+                        
+              <div class="social-icons">
+                <a href="https://www.facebook.com/atelje.mlinumetnin.9" class="fa fa-facebook"></a>
+              </div>
+
+
+            </div>
+
+
+
+          </div>
+          <div class="footer_logo">
+              <img src= "{{ url_for('static', filename= '/images/footer_logo_1.png') }}" alt="logotip" class="logotip">
+          </div>
+        </div>
+      </div>
+      
+
+
+
+    </div>
+
+
+
+
+  </body>
+</html>
