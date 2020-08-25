@@ -7,7 +7,7 @@ import smtplib
 
 
 app= Flask(__name__,static_url_path="",static_folder="static")
-app.config['SERVER_NAME'] = 'localhost:888'
+#app.config['SERVER_NAME'] = 'localhost:888'
 
 @app.route('/')
 def index():
@@ -25,4 +25,4 @@ logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(name)s - %(leve
 log = logging.getLogger(__name__)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
