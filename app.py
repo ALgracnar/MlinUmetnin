@@ -31,11 +31,11 @@ app.config['WTF_CSRF_ENABLED'] = False
 #SESSION_COOKIE_SAMESITE = None # One of [None, 'Lax', 'Strict']
 app.config['MAIL_SERVER']='smtp.googlemail.com'
 app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = 'aljazz.grachnar@gmail.com'
-app.config['MAIL_PASSWORD'] = 'niffmkuyajczvipx'
+app.config['MAIL_USERNAME'] = 'your_mail@gmail.com'
+app.config['MAIL_PASSWORD'] = 'your_pasword'
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
-app.config['MAIL_DEFAULT_SENDER'] ='aljazz.grachnar@gmail.com'
+app.config['MAIL_DEFAULT_SENDER'] ='your_mail@gmail.com'
 # app.config.update( SESSION_COOKIE_NAME='MyApp-Session', )
 
 mail.init_app(app)
@@ -402,7 +402,7 @@ def send_message(message):
     text = message.get('message')
 
     msg = Message(subject=message.get('email'),
-    		recipients = ['mlinumetnin@gmail.com'],
+    		recipients = ['target_mail@gmail.com'],
             body= "You have received a new feedback from {} <{}>.\n \n Sporočilo: {}".format(name, email, text)        
             
     )  
