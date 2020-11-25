@@ -1,7 +1,5 @@
 /* GENERAL STYLES */
 
-
-
 @font-face {
   font-family: Mo_Regular;
   src: url(../font/Montserrat-Regular.ttf);
@@ -17,17 +15,18 @@
 
 @font-face {
   font-family: Mo_ExtraBold;
-  
   src: url(../font/Montserrat-ExtraBold.ttf);
- 
 }
 
 @font-face {
   font-family: Mo_Light;
-  
   src: url(../font/Montserrat-Light.ttf);  
 }
 
+@font-face {
+  font-family: Mo_L_Italic;
+  src: url(../font/Montserrat-LightItalic.ttf);  
+}
 
 *{
   font-family: Mo_Regular;
@@ -35,28 +34,35 @@
   box-sizing: border-box;
 }
 
-
-
 .container {
   max-width: 1400px;
   margin: 0 auto;
-
 }
 
+.navigation{
+  overflow: hidden;
+  padding: 5px;
+  background-color: #f5f5f5;
+}
+
+.header_gallery{
+  width: 100%;
+  padding: 5px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  height: 10%;
+}
 
 .navigation{
-
-
-  background-color: transparent 0.4;
-
-
+  overflow: hidden;
+  padding: 5px;
+  background-color: #f5f5f5;
 }
 
 .nav-items {
-
+  overflow: hidden;
   display: block;
   text-align: center;
-
 }
 
 .nav-items ul {
@@ -65,159 +71,151 @@
 
 .nav-items ul li {
   display: inline-block;
-  margin: 0 10px 0 10px;
+  margin: 0 15px 0 15px;
 }
 
 .nav-items ul li a {
-  font-family: Mo_ExtraBold;
+  font-family: Mo_R_Italic;
   color: #414042;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
+  line-height: 1.5;
 }
 
 .nav-items ul li a:hover {
   color: #C08E77;
 }
 
-
-
-/* HEADER STYLES */
-
 .header {
-
-  background: url('../images/MU_header_1600x900_2.jpg');
+  background: url('../images/loncarstvo-atelje-mlin-umetnin-unikatna-keramika.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 50vh;
   position: relative;
-
 }
+
+.header_success {
+  background: url('../images/send-succes-photo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  position: relative;
+}
+
 .h2_head{
   font-family: Mo_R_Italic;
   letter-spacing: 1.5px;
   color: #414042;
-  font-size: 1em;
-
+  font-size: 16px;
 }
-.header .header-text {
+
+.header-logo {
   background: rgba(1, 1, 1, 0);
-  
-  display: block;
+  font-size: 28px;
+  display: inline;
   margin: auto;
-  max-height: 220px;
-  max-width: 500px;
-  /*padding: 40px;*/
+  max-width: 900px;
+  padding: 5px;
   text-align: center;
   position: absolute;
-  bottom: -70px;
+  top: 17.5%;
   left: 0;
   right: 0;
-  /*top: 0;*/
+}
+
+.header-logo-g {
+  background: rgba(1, 1, 1, 0);
+  font-size: 28px;
+  display: inline;
+  margin: auto;
+  max-width: 900px;
+  padding: 5px;
+  text-align: center;
+  position: absolute;
+  top: 17.5%;
+  left: 0;
+  right: 0;
+}
+
+.logo_header{
+  height: 200px;
+}
+
+@media screen and (min-width: 750px){
+
+  .logo_header{
+    height: 300px;
+  }
+
+  .h2_head{
+    font-size: 18px;
+  }
+}
+
+.header-text {
+  display: block;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  /*position: absolute;*/
+  left: 0;
+  right: 0;
 }
 
 @media screen and (min-width: 550px){
-
   .header {
-  height: 60vh;
-  
+    height: 60vh;
   }
-  .h2_head{
 
-  font-size: 1.2em;
-
+  .header_success {
+    height: 40vh;
+  }
 }
 
-
-}
 @media screen and (min-width: 750px){
-
   .header {
-  height: 70vh;
-  
+    height: 70vh;
   }
-  .h2_head{
-
-  font-size: 1.3em;
-
-  }
-
 }
-
 
 @media screen and (min-width: 930px){
-
   .header {
-  height: 80vh;
-  
-  }
-  .h2_head{
-
-  font-size: 1.5em;
-
+    height: 80vh;
   }
 
-
-}
-@media screen and (min-width: 1030px){
-
-  .header .header-text {
-  bottom: -80px;
-  
+  .header_success {
+    height: 50vh;
   }
-
-
-}
-@media screen and (min-width: 1130px){
-
-  .header .header-text {
-  bottom: -110px;
-  
-  }
-
 }
 
-/* PORTFOLIO STYLES */
+.portfolio_gallery {
+  padding-top: 5%;
+  padding-bottom: 80px;
+  background-image: linear-gradient(#f5f5f5 85%, #E8E1D0);
+}
 
 .portfolio {
-  padding: 180px 0;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  background-color: #f5f5f5;
 }
-.portfolio .title_gallery {
 
-  padding: 50px;
+.title_gallery {
+  padding-top: 0;
   margin: auto;
   text-align: center;
+  
 }
-
 
 .logo_umetnin {
   font-family: Mo_ExtraBold;
   display: inline;
 }
 
-
-
-
-.portfolio_content{
-  text-align: center;
-  
-}
-.gallery-image{
-  max-width: 400px;
-  width: 100%;
+.item-cont  {
   background-size:contain;
-
-}
-.portfolio-item{
-
-  background-size: contain;
-  text-align: center;
-
-}
-
-.portfolio .item-cont  {
-  background-size:contain;
-  /*border: 1px solid red;*/
   text-align: center;
   padding: 2.5%;
   background-repeat: no-repeat;
@@ -227,12 +225,96 @@
   overflow: hidden;
 }
 
+.portfolio-item{
+  background-size: contain;
+  text-align: center;
+  overflow: hidden;
+}
 
+.single-item-cont{
+  text-align: center;
+  padding: 2.5%;
+  padding-top: 10%;
+  display: block;
+  width: 80%;
+  margin: auto;
+}
 
+/*.single-portfolio-item{
+	display: block;
+	width: 80%;
+	border: 1px solid red;
+	text-align: center;
+	margin: auto;
+}*/
 
-@media screen and (min-width: 550px) {
-  .portfolio .item-cont {
-    
+.single-gallery-image{
+  max-width: 523px;
+  width: 100%;
+  background-size:contain;
+  overflow: hidden; 
+}
+
+.portfolio_content{
+  text-align: center;
+}
+
+.gallery-image{
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  background-size:contain;
+  overflow: hidden; 
+}
+
+.portfolio-desc {
+  background: #e5d6cf;
+  opacity:0.8;
+  position: relative;
+  padding: 1px;
+  text-align: center;
+}
+
+.portfolio-item a  {
+  margin: -6px;
+  text-decoration: none;
+}
+
+.portfolio-desc p  {
+  font-family: Mo_R_Italic;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 420px) {
+  .item-cont {
+    width: 70%;   
+  }
+
+  .single-gallery-image{
+
+    width: 90%;
+
+  }
+  
+
+}
+
+@media screen and (min-width: 600px) {
+  .item-cont {
+    width: 63%;
+  }
+
+  .single-gallery-image{
+
+    width: 80%;
+
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .item-cont {
     width: 40%;
   }
 
@@ -240,129 +322,213 @@
 }
 
 @media screen and (min-width: 950px) {
-  .portfolio .item-cont {
-    width: 30%;
-         
+  .item-cont {
+    width: 32%;
+  }
+  .single-gallery-image{
+
+    width: 50%;
+
   }
 
+  .portfolio-desc {
+    position: absolute;
+    /*padding: 0px;*/
+    bottom: -105px;
+    width: 83.5%;
+  }
+
+  .item-cont:hover .portfolio-desc {
+    transform: translateY(-143px);
+    transition: transform 0.4s ease;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .portfolio-desc {
+    position: absolute;
+    /*padding: 0px;*/
+    bottom: -95px;
+    width: 84.5%;
+  }
 }
 
 .go_to_izdelki {
-
   padding-right: 7%;
   padding-top: 40px;
   text-align: right;
-
-
+  font-size: 10px;
 }
+
 .go_to_izdelki p {
   text-decoration: none;
   display: inline;
 }
+
 .go_to_izdelki a {
   text-decoration: none;
-
 }
-
-
-
-
-/* ABOUT STYLES */
 
 #about {
-
   padding-top: 160px;
-  padding-left: 5%;
-  padding-right: 5%;
-  
-  background-image: linear-gradient(white 65%, #E8E1D0);
+  /*padding-left: 5%;*/
+  /*padding-right: 5%;*/
+  background-image: linear-gradient(#f5f5f5 65%, #E8E1D0);
 }
 
-
 .about_layout{
-
   display: block;
   position: relative;
   text-align: left;
   max-width: 1400px;
   margin: auto;
-  height: 500px;
+  height: 600px;
+  padding-left: 5%;
+}
+
+#mood {
+  padding-top: 60px;
+  /*padding-left: 5%;*/
+  /*padding-right: 5%;*/
+  background-color: #E8E1D0;
+}
+
+.about_layout_mood{
+  /*border: 1px solid black;*/
+  display: block;
+  position: relative;
+  text-align: center;
+  /*max-width: 1400px;*/
+  margin: auto;
+  height: 60vh;
+  padding: 5%;
+  
 
 }
+.profile-image-cont-mood-left {
+  background: url('../images/keramika-poslikava-atelje-mlin-umetnin.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  /*border: 1px solid black;*/
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  /*height: 600px;*/
+  float: left;
+  margin-bottom: 5vh;
+
+}
+.profile-image-cont-mood-right {
+  background: url('../images/keramika-atelje-mlin-umetnin-rocno-delo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  float: right;
+}
+
+/*.profile-image-mood {
+  max-width: 500px;
+  width: 100%;
+
+}*/
+
+@media screen and (min-width: 900px) {
+
+  .profile-image-cont-mood-left{
+    width: 49%;
+    height: 40vh;
+
+  }
+  .profile-image-cont-mood-right{
+    width: 49%;
+    height: 40vh;
+
+  }
+  .about_layout_mood{
+    height: 50vh;
+
+  }
+
+
+
+
+}
+
+
+
 .about_h{
-position: absolute;
-left: 33.25%;
-top: -75px;
-
+  position: absolute;
+  width: 100%;
+  top: -150px;
 }
 
 
-@media screen and (max-width: 1000px) {
-  .about_layout{
-    height: 650px;
-
-  }
-
-}
-@media screen and (max-width: 750px) {
-  .about_layout{
-    height: 700px;
-
-  }
-
-}
-
-@media screen and (max-width: 650px) {
-  .about_layout{
-    height: 750px;
-
-  }
-
-}
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1040px) {
   .about_layout{
     height: 800px;
 
   }
-
 }
 
+@media screen and (max-width: 890px) {
+  .about_layout{
+    height: 900px;
+    padding-left: 0%;
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about_layout{
+    height: 950px;
+  }
+
+  .about_h{
+    top: -115px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about_layout{
+    height: 1050px;
+  }
+}
 
 .profile-image-cont {
   display: inline-block;
   text-align: center;
   width: 100%;
-
 }
+
 .profile-image {
-  max-width: 400px;
-
+  max-width: 500px;
   width: 100%;
 }
+
 .profile-text-cont {
-
   display:inline-block;
-  padding-left: 0px;
+  padding-right: 5%;
   width: 100%;
 }
-
-
-
 
 .go_to_o_meni {
-
   position: absolute;
-  bottom: 22%;
+  bottom: 10%;
   right: 7%;
 }
+
 .go_to_o_meni p {
   text-decoration: none;
   display: inline;
 }
 .go_to_o_meni a {
   text-decoration: none;
-
 }
 
 .a_arrow:hover .arrow {
@@ -370,8 +536,9 @@ top: -75px;
   border-width: 0 4px 4px 0;
 }
 
-
-
+.a_arrow:hover .nazaj_arrow {
+  color: #C08E77;
+}
 
 .arrow {
   border: solid #414042;
@@ -382,77 +549,80 @@ top: -75px;
   -webkit-transform: rotate(-45deg);
 }
 
+.inspiration_p {
+  font-family: Mo_Regular;
+  line-height: 2;
+  color: #414042;
+  letter-spacing: 1.25px;
+  font-size: 13px;
+}
 
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .profile-image-cont {
-
-    text-align: right;
-    width: 39%;
+    vertical-align: middle;
+    text-align: left;
+    width: 44%;
 
   }
 
   .profile-text-cont {
-    position: absolute;
-    top: 150px;
-    right:7%;
-    width: 60%;
+    vertical-align: middle;
+    padding-left: 25px;
+    width: 55%;
   }
 
   .profile-text-cont p {
     max-width: 600px;
   }
+  .inspiration_p {
+    font-size: 16px;
+  }
 }
-
-/* CONTACT STYLES */
-
 
 .inspiration{
   width: 60%;
   display: inline-block;
-  padding-bottom: 70px;
+  /*padding-bottom: 30px;*/
  
   text-align: center;
 
 }
-.inspiration_p{
 
-  font-family: Mo_R_Italic;
-  line-height: 1.6;
-  color: #414042;
-  letter-spacing: 1.25px;
-  font-size: 16px;
 
-}
-
-.contact {
+.insp {
   display: block;
-  
-  padding-bottom:40px;
   background-color: #E8E1D0;
   text-align: center;
   margin: 0 auto;
 }
 
-.contact .contact-text-container {
+.contact {
+  display: block;
   font-family: Mo_ExtraBold;
-  max-width: 1400px;
-  max-width: 700px;
-  background-color: #E8E1D0;
-  padding-bottom: : : 50px;
+  padding-bottom: 30px;
+  padding-top: 50px; 
   margin: 0 auto;
+  background-color: #E8E1D0;
+  text-align: center;
 }
+
 .h2_heading{
+  text-align: center;
   font-family: Mo_ExtraBold;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   color: #414042;
-
+  font-size: 18px;
+  line-height: 1.5;
 }
 
+@media screen and (min-width: 750px){
 
+  .h2_heading{
+    letter-spacing: 2.5px;
+    font-size: 24px;
+  }
+}
 
-
-/* Style inputs with type="text", select elements and textareas */
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #414042;
   font-family: Mo_Regular;
@@ -473,46 +643,54 @@ top: -75px;
   padding-right: 5%;
   padding-left: : 5%;
   text-align: right;
-
 }
 
 input[type=text], select, textarea {
   width: 90%; /* Full width */
   padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  /*border-radius: 4px;  Rounded borders */
+  border: 1px solid #ccc; 
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
   border: 1px solid #ccc;
   background-color: #C08E77;
   color: #E8E1D0;
   transition: 0.3s;
-
-
-  /*border-radius: 4px;*/
   cursor: pointer;
-  /*text-align: right;*/
   padding: 12px;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #414042;
+}
 
+.success{
+  border: 2px solid red;
+  display: block;
+  padding: 5%;
+  background-color: #f5f5f5;
+  padding-bottom: 30px;
+  padding-top: 50px; 
+  margin: 0 auto;
+  text-align: center;
 }
 
 
+
+
+
 /*######################### FOOOTERR ##############*/
+address{
+  font-style: normal;
+
+}
+
 .container_footer{
   position: relative;
-  /*border: 2px solid red;*/
-  /*padding: 50px;*/
   display: block;
   background-color: #414042;
 }
@@ -551,17 +729,16 @@ input[type=submit]:hover {
   padding-left: 10px;
 }
 
-
 /*######################### Foot font ##############*/
 
 .foot_initials{
-
   padding-left: 5px;
   font-family: Mo_ExtraBold;
   display: inline;
   font-size: 14px;
   color: #E8E1D0;
 }
+
 .foot_infos{
   font-family: Mo_Light;
   letter-spacing: 1.5px;
@@ -569,23 +746,62 @@ input[type=submit]:hover {
   display: inline;
   font-size: 12px;
   color: #E8E1D0;
-
 }
 
 /*######################### Footer logo ##############*/
 .footer_logo{
   position: absolute;
   display: inline-block;
-  right: 3%;
+  right: 5%;
   top: 80px;
- 
 }
-.logotip{
 
+.logotip{
   height: 130px;
 
-/*######################### Social icon ##############*/
 }
+
+@media screen and (max-width: 600px) {
+
+  .foot_name{
+    letter-spacing: 2.5px;
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+
+  .footer_logo{
+    right: 5%;
+    top: 65px;
+  }
+
+  .logotip{
+    height: 90px;
+  }
+
+  .foot_line{
+    padding-bottom: 5px;
+  }
+
+  .foot_initials{
+    font-size: 11px;
+  }
+
+  .foot_infos{
+    letter-spacing: 1.2px;
+    font-size: 9px;
+  }
+
+
+  .social-icons .fa {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+    border-radius: 12%;
+  }
+}
+
+/*######################### Social icon ##############*/
+
 .social-icons {
   padding-top: 30px;
   position: relative;
@@ -596,23 +812,172 @@ input[type=submit]:hover {
   text-decoration: none;
 }
 .social-icons .fa {
-
-    position: absolute;
-    background: #E8E1D0;
-    color: #414042;
-    padding-top: 8px;
-    padding-left: 12px;
-    font-weight: lighter;
-    font-size: 28px;
-    width: 32px;
-    height: 32px;
-    border-radius: 15%;
-    text-decoration: none;
-    margin: 5px 2px;
+  position: absolute;
+  background: #E8E1D0;
+  color: #414042;
+  padding-top: 8px;
+  padding-left: 12px;
+  font-weight: lighter;
+  font-size: 28px;
+  width: 32px;
+  height: 32px;
+  border-radius: 15%;
+  text-decoration: none;
+  margin: 5px 2px;
 }
+
 .form-group{
   display: block;
   text-align: left;
-
 }
 
+/*GALLERY*/
+
+.nazaj_arrow{
+  font-family: Mo_R_Italic;
+  line-height: 70%;
+  color: #414042;
+  letter-spacing: 1.25px;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+/*############# aboout html ##############*/
+
+#about_page {
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-image: linear-gradient(#f5f5f5 65%, #E8E1D0);
+}
+
+.about_layout_page{
+  display: block;
+  position: relative;
+  text-align: center;
+  max-width: 1400px;
+  margin: auto;
+  height: auto;
+}
+
+.about_h_page{
+display: block;
+padding-bottom: 20px;
+}
+
+.about_header{
+display: block;
+position: relative;
+}
+
+.profile-image-cont-page {
+  vertical-align: middle;
+  display: block;
+}
+
+.profile-image-page {
+  width: 100%;
+}
+
+.profile-text-cont-page {
+  vertical-align: middle;
+  display:block;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+  
+}
+
+@media screen and (min-width: 650px) {
+
+  .profile-image-cont-page {
+    display: inline-block;
+    text-align: right;
+    width: 90%;
+  }
+
+  .profile-image-page {
+     width: 100%;
+  }
+
+  .profile-text-cont-page  {
+    display: inline-block;
+    text-align: left;
+
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .about_header{
+    display: block;
+    position: relative;
+  }
+}
+
+.inspiration_p_about{
+  line-height: 2;
+  letter-spacing: 1.25px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1000px) {
+
+
+  .profile-image-cont-page {
+    display: inline-block;
+    width: 44%;
+  }
+  .inspiration_p_about{
+
+    font-size: 17px;
+  }
+
+  .profile-image-page {
+     width: 90%;
+  }
+
+  .profile-text-cont-page {
+    display: inline-block;
+    text-align: left;
+    top: 150px;
+    width: 55%;
+    padding-left: 5%;
+  }
+
+  .profile-text-cont-page  {
+    max-width: 600px;
+  }
+
+  .about_header{
+    display: block;
+    position: relative;
+  }
+
+
+
+  .about_h_page {
+    display: block;
+    padding-bottom: 100px;
+  }
+
+
+  #about_page {
+    padding-top: 100px;
+  }
+}
+
+.about_sub_cont{
+  padding-bottom: 70px;
+}
+
+
+.bottom-cont{
+  padding-right: 5%;
+  padding-left: 0%;
+}
+
+
+
+
+h2{
+  font-size: 1.25em;
+}

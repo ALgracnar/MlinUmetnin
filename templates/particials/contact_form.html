@@ -1,0 +1,51 @@
+
+ <!--contact start -->
+
+<div id="contact" class="contact">
+  <div class="container">
+    <h2 class="h2_heading">KONTAKT</h2>
+  </div>
+</div>
+
+<div class="container_contact">
+  <div class="container">
+    
+    <form action="{{ url_for('index') }}" method="POST" role="form">
+
+        
+      {{ form.name(type="text",id='fname',placeholder="vaše ime") }}
+      
+      {% for error in form.name.errors %}
+        <li style="color: red;">[{{ error }}]</li>
+      {% endfor %}
+
+      
+      {{ form.email(type="text", id="lname", placeholder="vaš e-mail naslov") }}
+      
+      {% for error in form.email.errors %}
+        <li style="color: red;">{{ error }}</li>
+      {% endfor %}
+    
+
+      {{ form.message(id="subject",  placeholder="sporočilo", style="height:200px") }}
+
+      {% for error in form.message.errors %}
+        <li>{{ error }}</li>
+      {% endfor %}
+
+
+      <div class="submit_cont" >
+        
+
+        
+        {{ form.submit(class='btn btn-success', href="#contact") }}
+
+      </div>
+    </form>
+
+
+
+  </div>
+</div>
+
+

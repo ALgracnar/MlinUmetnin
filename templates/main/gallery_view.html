@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--meta data-->
+    <title>Atelje Mlin Umetnin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Lončarstvo, Šentjur pri Celju lončar, tradicionalni ločarski izdelki, lončena posoda, tradicija, lončeni izdelki, Marija Gračnar lončarstvo, Atelje Mlin Umetnin, Mlin Umetnin, keramika, unikatni ročni izdelki, Marija Gračnar" />
+    <meta name="description" content="Lončarstvo Atelje Mlin Umetnin,  Kakovostna keramika izpod rok tradicije" />
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gallery_view.css') }}">
+    
+    <!-- ############favicon start############## -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/fav/favicon-16x16.png">
+    <!-- ############favicon end ############## --> 
+  </head>
+  <body> 
+    <nav class="navigation">
+      <div class="nav-items">
+        <ul class="nav_opac">
+          <li><a href="/" >domov</a></li>
+          <li><a href="/gallery/" style="color: #C08E77">galerija</a></li>
+          <li><a href="/about/">o meni</a></li>
+          <li><a href="/#contact">kontakt</a></li>
+        </ul>
+      </div>     
+    </nav>
+
+    <div class="header">
+      <div class="naslov">
+        <h2>ATELJE MLIN UMETNIN</h2>
+      </div>
+      <div class="header_fill">
+
+        
+
+        <div class="header-logo">
+          <div class="go_to_o_meni">
+            {% set image_url_pre=pic_pre.replace('.jpg','').replace('images/','') %}
+            <a class="a_arrow" href="{{image_url_pre}}">
+              <p><i class="arrow" style="-webkit-transform: rotate(135deg)" ></i></p>
+
+            </a>
+          </div>
+          <img src="{{ url_for('static', filename= path_img) }}" alt="{{(desc_gallery[colection_index][pic_index][3])[3:]}}" class="logo_header">
+          
+          <div class="go_to_o_meni_right">
+            {% set image_url_after=pic_after.replace('.jpg','').replace('images/','') %}
+            <a class="a_arrow" href="{{image_url_after}}">
+              <p><i class="arrow"></i></p>
+ 
+            </a>
+          </div>
+
+        </div> 
+
+        <div class="exit">
+          <a class="exit_btn" href="{{exit_path}}">
+
+            <p class="exit_go">X</p>
+
+          </a>
+          
+        </div>
+
+
+        <div class="product_description">
+
+
+
+
+
+          <div class="name">
+            <p>{{(desc_gallery[colection_index][pic_index][1])[2:]}}<br></p>
+            <!-- <p style="font-family: Mo_ExtraBold">________________________________</p> -->
+          </div>
+
+          <!-- <div class="price">
+            <p>-  {{desc_gallery[colection_index][pic_index][2]}}  €  -</p>
+
+          </div> -->
+
+          <div class="send_inq">
+
+            <a class="a_arrow" href="/gallery/#contact">
+              <p class="nazaj_arrow">pošljite povpraševanje</p>
+ 
+            </a>
+          </div>
+
+          <!-- <div class="size">
+            <p>Višina:   {{desc_gallery[colection_index][pic_index][4]}} cm</p>
+            <p>Premer:   {{desc_gallery[colection_index][pic_index][5]}} cm</p>
+          </div> -->
+
+          <div class="color">
+            <p style="letter-spacing: 2px">Vsak izdelek je plod ročnega dela, izdelan iz gline v končni produkt v lončarstvu Atelje Mlin Umetnin. Vsak kos keramike je unikaten, zaradi ročne izdelave in poslikave se lahko izdelki iz iste kolekcije med seboj razlikujejo, kot so lahko vidne tudi manjše nepravilnosti.<br><br>Vsi izdelki so pobarvani z barvami in glazurami priznanih proizvajalcev, so primerne za uživanje in pranje v pomivalnem stroju. </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div> 
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

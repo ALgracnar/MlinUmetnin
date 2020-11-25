@@ -1,0 +1,150 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<div class="header_gallery">
+  <nav class="navigation">
+    <div class="nav-items">
+      <ul class="nav_opac">
+        <li><a href="/" >domov</a></li>  
+        <li><a href="/gallery/">galerija</a></li>
+        <li><a href="/about/" style="color: #C08E77">o meni</a></li>
+        <li><a href="#contact">kontakt</a></li>
+      </ul>
+    </div>     
+  </nav> 
+</div>
+
+
+
+<div id="about_page" class="about_page">
+  <div class="container">
+    <div class="about_layout_page">
+
+      <div class="about_h_page">
+        <div class="about_header">
+          <h2 class="h2_heading">ZGODBA O MLINU IN USTVARJANJU</h2>
+        </div>
+      </div>
+
+      
+
+      
+
+      
+
+      <div class="about_sub_cont">
+        <div class="profile-image-cont-page">
+          <img src= "{{ url_for('static', filename= '/images/about/Marija-Gracnar-Loncarstvo-Atelje-Mlin-Umetnin.jpg') }}" alt=" Lončarski Atelje Mlin Umetnin Marija Gračnar" class="profile-image-page" >
+        </div>
+        <div class="profile-text-cont-page">
+          <h2>Marija Gračnar </h2>
+          <p class="inspiration_p_about">Kreativno ustvarjanje mi je izziv in strast, ki me neizmerno osrečuje. Moji začetki ustvarjanja tako segajo v leto 1995. Umetniško področje, s katerim se ukvarjam zajema: izdelavo in poslikavo keramike, slikanje na različne materiale (steklo, platno, les..), izdelovanje panjskih končnic in pirografijo.
+          </p>
+        </div>
+      </div>
+
+      <div class="about_sub_cont">
+        <div class="profile-image-cont-page">
+          <img src= "{{ url_for('static', filename= '/images/about/Marija-Gracnar-loncarsko-vreteno.jpg') }}" alt="Lončarski Atelje Mlin Umetnin keramika lončarsko vreteno" class="profile-image-page" >
+        </div>
+        <div class="profile-text-cont-page">
+          <h2>Lončarstvo, Ljubezen do keramike</h2>
+          <p class="inspiration_p_about" >
+          Trenutno največ svojega časa posvečam keramiki, oblikovanju gline. Tako je nastal lončarski Atelje Mlin Umetnin, kot sad velike ljubezni do keramičarskih izdelkov in starodavne obrti. V delovnem ateljeju, ki je hkrati tudi prodajni prostor in galerija, združujem slikarstvo z rokodelsko tradicijo in sodobno unikatno keramiko.
+          </p>
+        </div>
+      </div>
+
+      <div class="about_sub_cont">
+        <div class="profile-image-cont-page">
+          <img src= "{{ url_for('static', filename= '/images/about/Atelje-mlin-umetnin-loncarski-izdelki.jpg') }}" alt="Lončarski Atelje Mlin Umetnin keramika" class="profile-image-page" >
+        </div>
+        <div class="profile-text-cont-page">
+          <h2>Ustvarjanje za sprostitev</h2>
+          <p class="inspiration_p_about">Znano je, da ustvarjanje z glino sprošča in umirja, je neke vrste delovna terapija. Energijo in inspiracijo za ustvarjanje črpam iz narave in okolice, kjer živim, iz svojih spominov in od prijaznih ljudi. Ustvarjanje z glino mi omogoča odkrivanje novih spoznanj in čudovitih notranjih občutkov. Glina je naravni material, ko se je dotikamo, se povežemo z naravo in se obogatimo z energijo naravnih danosti.
+          </p>
+        </div>
+      </div>
+
+      <div class="about_sub_cont">
+        <div class="profile-image-cont-page">
+          <img src= "{{ url_for('static', filename= '/images//about/loncarski-izdelki-atelje-mlin-umetnin.jpg') }}" alt="Lončarski izdelki Atelje Mlin Umetnik eramika" class="profile-image-page" >
+        </div>
+        <div class="profile-text-cont-page">
+          <h2>Vračanje nazaj k naravi</h2>
+          <p class="inspiration_p_about" >Glineni izdelki so narejeni z ljubeznijo in so odlična možnost, da se povežemo z naravo. Vračanje nazaj k naravi je želja vedno več ljudi. Tako je uporaba lončenih izdelkov priporočljiva. Danes je znano, da je keramična ali lončena posoda bolj zdrava, ima odlično lastnost, da se nanjo hrana ne prijema, prav tako pri peki ni potrebno uporabiti velikih količin maščob, hrana pa kljub temu zadrži svoj okus. 
+          </p>
+        </div>
+      </div>
+
+      <div class="about_sub_cont">
+        <div class="profile-image-cont-page">
+          <img src= "{{ url_for('static', filename= '/images//about/panjske-koncnice-Atelje-mlin-umetnin.jpg') }}" alt="Lončarski Atelje Mlin Umetnin Panjske končnice" class="profile-image-page" >
+        </div>
+        <div class="profile-text-cont-page">
+          <h2>Panjske končnice</h2>
+          <p class="inspiration_p_about" >Ročno izdelujem čudovito posebnost slovenske ljudske umetnosti - panjske končnice. Panjske končnica so visoke kakovosti, na voljo v najbolj znanih motivih iz preteklosti in starinskem videzu.
+          </p>
+        </div>
+      </div>
+
+      <div class="about_sub_cont">
+        <div class="profile-image-cont-page">
+          <img src= "{{ url_for('static', filename= '/images/about/slika-lesena-pirografija-Atelje-mlin-umetnin.jpg') }}" alt="Lončarski Atelje Mlin Umetnin Pirografija" class="profile-image-page" >
+        </div>
+        <div class="profile-text-cont-page">
+          <h2>Pirografija</h2>
+          <p class="inspiration_p_about" > Umetniska tehnika, pri kateri se razni motivi, slike ali tekst vžgejo na na les, pluto, ali usnje.
+          </p>
+        </div>
+      </div>
+
+      <div class="about_sub_cont">
+        <div class="profile-image-cont-page">
+          <img src= "{{ url_for('static', filename= '/images/home/domacija-loncarstvo-mlin-umetnin.jpg') }}" alt="Domačija Lončarstvo Mlin Umetnin" class="profile-image-page">
+        </div>
+        <div class="profile-text-cont-page">
+          <h2>Najdete nas v prečudoviti naravi</h2>
+          <p class="inspiration_p_about">Atelje Mlin Umetnin se nahaja v idiličnem kraju Osredek, ki se nahaja le nekaj kilometrov stran od Šentjurja pri Celju. V objemu narave, ob žuborečem potoku najdete našo obnovljeno domačijo z več kot dvesto let starim mlinom na vodni pogon. Njegovo kolo se še vedno vrti. Tukaj, z zavedanjem dolžnosti spoštljivega ohranjanja kulturne zapuščine naših prednikov, ter neprenehnega pridobivanja navdiha iz čudovite narave, dodajamo zgodbi o starodavnih obrteh mlinarstva in lončarstva, novo poglavje.
+          </p>
+        </div>
+      </div>
+
+      <div class="about_sub_cont">
+        <div class="profile-image-cont-page">
+          <img src= "{{ url_for('static', filename= '/images/about/etnoloski-muzej-loncarstvo-mlin-umetnin.jpg') }}" alt=" Lončarstvo Atelje Mlin Umetnin - Etnološki muzej" class="profile-image-page" >
+        </div>
+        <div class="profile-text-cont-page">
+          <h2>Stik s preteklostjo</h2>
+          <p class="inspiration_p_about">Na voljo vam je tudi ogled etnološkega hišnega muzeja, ki prikazuje nekdanji način življenja preprostega  človeka na podeželju, ki vas bo popeljal v preprostost življenja v preteklosti.
+          </p>
+        </div>
+      </div>
+
+      <div class="about_sub_cont">
+        <div class="profile-image-cont-page">
+          <img src= "{{ url_for('static', filename= '/images/about/kulturna-dediscina-loncarstvo-mlin-umetnin.jpg') }}" alt=" Etnoloski muzej Lončarstvo Atelje Mlin Umetnin" class="profile-image-page" >
+        </div>
+        <div class="profile-text-cont-page">
+          <h2>Mlin nekoč, atelje danes</h2>
+          <p class="inspiration_p_about">Kot je bil nekoč mlin ena izmed pogostih točk druženja ljudi, tudi meni lončarski atelje predstavlja mesto druženja. Prihajajo ljudje, s katerimi prijetno pokramljam, predstavim svoje delo in z njimi tkem nova prijateljstva.
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    
+
+
+  <div class ="go_to_izdelki" style="  background-color: #E8E1D0">
+    <a class="a_arrow" href="/#about">
+      <p class="nazaj_arrow">nazaj<i  ></i></p>
+      <p><i class="arrow" style="-webkit-transform: rotate(135deg)"></i></p>
+      <p><i class="arrow" style="-webkit-transform: rotate(135deg)"></i></p>
+    </a>
+  </div>
+</div>
+{% endblock %}
+

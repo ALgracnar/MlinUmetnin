@@ -1,0 +1,70 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<div class="header_gallery">
+  <div class="container">
+    <nav class="navigation">
+      <div class="nav-items">
+        <ul class="nav_opac">
+          <li><a href="/" >domov</a></li>
+          <li><a href="/gallery/" style="color: #C08E77">galerija</a></li>
+          <li><a href="/about/">o meni</a></li>
+          <li><a href="#contact">kontakt</a></li>
+        </ul>
+      </div>     
+    </nav> 
+  </div>
+</div>
+
+<div id="portfolio_gallery" class="portfolio_gallery">
+  <div class="container">
+    <div class="title_gallery">
+      <h1 class="h2_heading">GALERIJA LONČARSKIH IZDELKOV</h1>
+    </div>
+
+    <div class="portfolio_content">
+      
+      {% for dict in List_photo %}
+
+        <div id="{{List_photo_names[loop.index-1]}}" class="{{List_photo_names[loop.index-1]}} single-item-cont">
+            <img src= "{{ url_for('static', filename= Cov_photo[loop.index-1]) }}" alt="unikatna keramika" class="single-gallery-image">
+        </div>
+
+        {% set colection_index=loop.index-1 %}
+
+        {% for image in dict %}
+
+          {% set pic_index=loop.index-1 %}
+          
+          <div class="item-cont">
+            <div class="portfolio-item">
+
+              {% set image_url=image.replace('.jpg','').replace('images/','') %}
+              
+              <a href="{{image_url}}">
+                <img src="{{ url_for('static', filename= image) }}" alt="unikatna keramika" class="gallery-image">
+                <div class="portfolio-desc">
+                  <p>{{(desc_gallery[colection_index][pic_index][1])[2:]}}</p>
+                  <p>Povečaj</p>
+                  <!-- <p>{{desc_gallery[colection_index][pic_index][2]}}€</p> -->
+                </div>
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+      {% endfor %}
+
+      <div class="go_to_izdelki">
+        <a class="a_arrow" href="/#portfolio">
+          <p class="nazaj_arrow">nazaj<i  ></i></p>
+          <p><i class="arrow" style="-webkit-transform: rotate(135deg)"></i></p>
+          <p><i class="arrow" style="-webkit-transform: rotate(135deg)"></i></p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

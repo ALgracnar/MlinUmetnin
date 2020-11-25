@@ -1,0 +1,126 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<nav class="navigation">
+  <div class="nav-items">
+    <ul class="nav_opac">
+      <li><a href="/gallery/">galerija</a></li>
+      <li><a href="/about/">o meni</a></li>
+      <li><a href="#contact">kontakt</a></li>
+    </ul>
+  </div>     
+</nav>
+
+
+  
+<div class="header">
+  <div class="header-logo">
+    <img src= "{{ url_for('static', filename= '/images/Atelje-Mlin-Umetnin-Logo-0-03.png') }}" alt="logotip Mlin Umetnin" class="logo_header">
+  </div> 
+</div>
+
+<div id="header-text" class="header-text" style="background-color: #f5f5f5">
+  <div class="container">
+    <p class="h2_head">Lončarski izdelki izpod rok tradicije</p>
+    <p style="font-family: Mo_ExtraBold">________________________________</p>
+  </div>
+</div>
+
+<div id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="title_gallery">
+      <h2 class="h2_heading">LONČARSKI IZDELKI</h2>
+    </div>
+    <div class="portfolio_content">
+
+      {% for image in List_photo %}
+
+        <div class="item-cont">
+          <div class="portfolio-item">
+            <a href="/gallery/#{{List_photo_names[loop.index-1]}}">
+              <img src= "{{ url_for('static', filename= image) }}" alt="Atelje Mlin umetnin" class="gallery-image">
+              <div class="portfolio-desc">
+                
+                <p>{{desc_home[loop.index-1][0]}}</p>
+                <p>{{desc_home[loop.index-1][1]}}</p>
+                
+              </div>
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+
+      <div class="go_to_izdelki">
+        <a class="a_arrow" href="/gallery">
+          <p class="nazaj_arrow">več<i  ></i></p>
+          <p><i class="arrow" ></i></p>
+          <p><i class="arrow" ></i></p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="about" class="about">
+  <div class="container">
+    <div class="about_layout">
+      <div class="about_h">
+        <h2 class="h2_heading">NAJDETE NAS V PREČUDOVITI NARAVI</h2>
+      </div>
+      <div class="profile-image-cont">
+        <img src= "{{ url_for('static', filename= '/images/home/domacija-loncarstvo-mlin-umetnin.jpg') }}" alt="Domačija Mlin Umetnin" class="profile-image">
+      </div>
+      <div class="profile-text-cont">
+        <p class="inspiration_p">
+         Atelje Mlin Umetnin se nahaja v idiličnem kraju Osredek, ki se nahaja le nekaj kilometrov stran od Šentjurja pri Celju. V objemu narave, ob žuborečem potoku najdete našo obnovljeno domačijo z več kot dvesto let starim mlinom na vodni pogon. Njegovo kolo se še vedno vrti. Tukaj, z zavedanjem dolžnosti spoštljivega ohranjanja kulturne zapuščine naših prednikov, ter neprenehnega pridobivanja navdiha iz čudovite narave, dodajamo zgodbi o starodavnih obrteh mlinarstva in lončarstva, novo poglavje.
+        </p>
+      </div>
+      <div class="go_to_o_meni">
+        <a class="a_arrow" href="/about">
+          <p class="nazaj_arrow">preberite več<i  ></i></p>
+          <p><i class="arrow" ></i></p>
+          <p><i class="arrow" ></i></p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="insp" class="insp" style="padding-top: 120px">
+  <div class="container">
+    <div class="inspiration"  >
+      <p class="inspiration_p" style="font-family: Mo_B_Italic">"Kreativno ustvarjanje mi je izziv in strast, ki me neizmerno osrečuje."</p>
+    </div>
+  </div>
+</div>
+
+<div id="insp" class="insp">
+  <div class="container">
+    <div class="inspiration">
+      <p class="inspiration_p" style="font-family: Mo_B_Italic ; line-height: 1 ; text-align: right">Marija Gračnar</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="mood" class="mood">
+  <div class="container">
+    <div class="about_layout_mood">
+      <div class="profile-image-cont-mood-left" >
+        <!-- <img src= "{{ url_for('static', filename= '/images/home/home_kmetija.jpg') }}" alt="Domačija Mlin Umetnin" class="profile-image"> -->
+      </div>
+      <div class="profile-image-cont-mood-right" >
+        <!-- <img src= "{{ url_for('static', filename= '/images/home/home_kmetija.jpg') }}" alt="Domačija Mlin Umetnin" class="profile-image"> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+

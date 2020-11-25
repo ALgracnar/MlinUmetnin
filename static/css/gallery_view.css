@@ -1,0 +1,419 @@
+@font-face {
+  font-family: Mo_Regular;
+  src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Mo_R_Italic;
+  src: url(../font/Montserrat-Italic.ttf);
+}
+@font-face {
+  font-family: Mo_ExtraBold;
+  src: url(../font/Montserrat-ExtraBold.ttf);
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+}
+
+*{
+  font-family: Mo_Regular;
+  color: #414042;
+  box-sizing: border-box;
+  line-height: 2;
+}
+
+@media screen and (min-width: 1040px) {
+  html, body {
+    position: fixed;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.navigation{
+  height: 7.5%;
+  padding: 5px;
+  background-color: #f5f5f5;
+}
+
+.nav-items {
+  display: block;
+  text-align: center;
+}
+
+.nav-items ul {
+  padding: 0;
+}
+
+.nav-items ul li {
+  display: inline-block;
+  margin: 0 15px 0px 15px;
+}
+
+.nav-items ul li a {
+  font-family: Mo_R_Italic;
+  color: #414042;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-items ul li a:hover {
+  color: #C08E77;
+}
+
+.header {
+  
+  background: url('../images/loncarstvo-atelje-mlin-umetnin-unikatna-keramika.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 92.5%;
+  position: relative;
+  padding-top :   0.11%;
+}
+
+.h2_head{
+  font-family: Mo_R_Italic;
+  letter-spacing: 1.5px;
+  color: #414042;
+  font-size: 16px;
+}
+.naslov{
+  width: 90%;
+  margin: auto;
+  letter-spacing: 1.5px;
+  font-family: Mo_ExtraBold;
+}
+
+.naslov h2{
+  font-size: 1.17em;
+}
+
+.header_fill{
+  display: block;
+  position: relative;
+  /*border: 1px solid black;*/
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  border-radius: 10px;
+  margin: auto;
+  height: 90%;
+  width:  90%;
+}
+
+.header-logo {
+  position: relative;
+  /*border: 1px solid green;*/
+  display: inline-block;
+  /*height: 100%;*/
+  width: 59%;
+  padding:    2.5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  text-align: center;
+}
+
+.logo_header{
+  height: 100%;
+  max-width: 606px;
+  border-radius: 10px;
+  margin:auto ;
+  vertical-align: middle;
+  width:   85%;
+  object-fit: cover ;
+}
+
+.go_to_o_meni {
+  position: absolute;
+  bottom: 50%;
+  left: 2.5%;
+}
+
+.go_to_o_meni p {
+  text-decoration: none;
+  display: inline;
+}
+
+.go_to_o_meni a {
+  text-decoration: none;
+}
+
+.go_to_o_meni_right {
+  position: absolute;
+  bottom: 50%;
+  right: 2.5%;
+}
+
+.go_to_o_meni_right p {
+  text-decoration: none;
+  display: inline;
+}
+
+.go_to_o_meni_right a {
+  text-decoration: none;
+}
+
+
+.exit {
+  position: absolute;
+  bottom: 94%;
+  right: 1.5%;
+}
+
+.exit p {
+  text-decoration: none;
+  display: inline;
+  color: #f5f5f5;
+  font-size: 20px;
+}
+
+.exit a {
+  text-decoration: none;
+}
+
+
+.exit_btn:hover .exit_go{
+  color: #C08E77;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.a_arrow{
+  text-decoration: none;
+}
+
+.a_arrow:hover .arrow {
+  border: solid #C08E77;
+  border-width: 0 4px 4px 0;
+}
+.a_arrow:hover .nazaj_arrow {
+  color: #C08E77;
+}
+
+.arrow {
+  height: 26px;
+  width: 26px;
+  border: solid #f5f5f5;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.nazaj_arrow{
+  font-family: Mo_R_Italic;
+  line-height: 70%;
+  color: #414042;
+  letter-spacing: 1.25px;
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.product_description {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 40%;
+  padding:    2.5%;
+  padding-left: 5%;
+  /*padding-top: 7.5%;*/
+  text-align: left;
+}
+
+.product_description p {
+  color: #f5f5f5;
+}
+
+.name{
+  font-size: 24px;
+}
+
+.inspiration{
+  font-size: 18px;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.size{
+  font-size: 16px;
+  display: block;
+  position: relative;
+  padding-top: 0%;
+}
+
+.size p{
+  padding-right: 5%;
+  display: inline;
+}
+
+.color{
+  font-size: 16px;
+  display: block;
+  position: relative;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.material{
+  font-size: 16px;
+  display: block;
+  position: relative;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.price{
+  font-size: 24px;
+  letter-spacing: 4px;
+  position: absolute;
+  display: block;
+  bottom:10%;
+}
+.send_inq{
+
+  position: absolute;
+  display: block;
+  bottom:12.5%;
+  right: 7.5%;
+  border: 0.5px solid #414042;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  padding-left:20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+@media screen and (max-width: 570px) {
+  .nazaj_arrow {
+      font-size: 12px;
+
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .send_inq {
+    bottom: 4%;
+    right: 12.5%;
+
+  }
+}
+
+
+
+@media screen and (max-width: 1220px) {
+  .logo_header{
+    width:   100%;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+
+  .header{
+    height: 90%;
+  }
+
+  .naslov h2{
+    font-size: 0.8em;
+  }
+
+  .logo_header{
+    width:   90%;
+    object-fit: contain ;
+    margin: auto;
+  }
+
+  .header-logo {
+    width: 100%;
+    height:55%;
+    display: block;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 10%;
+  }
+
+  .product_description {
+    width: 100%;
+    padding-top: 2.5%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+
+  .name{
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 15px;
+    height: 
+
+  }
+  .size{
+    font-size: 14px;
+    display: block;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 0%;
+  }
+
+  .color{
+    font-size: 12px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+
+  }
+  .material{
+    padding-top: 0%;
+    padding-bottom: 0%;
+
+  }
+  .price{
+    font-size: 22px;
+    letter-spacing: 4px;
+    display: block;
+    position: relative;
+  }
+  .send_inq {
+    display: block;
+    position: relative;
+    right:auto;
+    bottom:  auto;
+    width: fit-content;
+
+
+  }
+
+  .navigation{
+    padding: 5px;
+    background-color: #f5f5f5;
+  }
+
+  .nav-items ul li a {
+    font-size: 13px;
+  }
+
+  .exit {
+    bottom: 96%;
+    right: 2.5%;
+  }
+
+}
